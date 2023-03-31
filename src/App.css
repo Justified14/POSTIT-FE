@@ -1,38 +1,313 @@
-.App {
+* {
+  text-decoration: none !important;
+  font-family: "Signika Negative";
+  font-style: normal;
+}
+
+.navh {
+  align-self: center;
+  gap: 25px;
+}
+
+.navh,
+h6 {
+  align-self: center;
+  font-family: Harmattan;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 0em;
+  color: #292929;
+}
+
+.btn {
+  background: #0086b0;
+  color: aliceblue;
+}
+
+.B {
+  color: #0086b0;
+}
+.subscribe {
+  position: absolute;
+  padding: 4px;
+}
+.subscribeb {
+  position: relative;
+  left: 14rem;
+  margin-top: 5px;
+}
+
+.logo {
+  color: bisque;
+}
+
+.homepage {
+  width: auto !important;
+  height: 550px;
+  width: 100%;
+  top: 88px;
+  padding-left: 50px;
+  padding-top: 150px;
+  background-image: url("./Images/BackgroungImg.svg");
+  background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+}
+.Stay {
+  width: 50%;
+ 
+}
+
+.Stay.h {
+  font-size: 500px;
+  font-weight: bold;
+}
+
+.secbox {
+  align-self: center;
+  border: 2px solid slategrey;
+}
+
+.life {
+  width: 89px;
+  height: 24px;
+  left: 291px;
+  top: 802px;
+  background: #e5bf5e;
+  color: #fdfeff;
+  border: none;
+  border-radius: 5px;
+}
+
+.life2 {
+  width: 89px;
+  height: 24px;
+  left: 291px;
+  top: 802px;
+  background: #41d750;
+  color: #fdfeff;
+  border: none;
+  border-radius: 5px;
+}
+
+.life3 {
+  width: 89px;
+  height: 24px;
+  left: 291px;
+  top: 802px;
+  background: #6397e5;
+  color: #fdfeff;
+  border: none;
+  border-radius: 5px;
+}
+.thrdbox {
+  background-image: url("./Images/Rectangle\ 38.png");
+  background-image: fit;
+}
+
+.login {
+  width: 600px;
+  height: 645px;
+  background-color: white;
+  border: #292929 1px solid;
+}
+
+.form1 {
+  margin-top: 130px;
+}
+
+.form2 {
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 300px;
+}
+
+.btn2 {
+  width: 315px;
+  height: 40px;
+  left: 513px;
+  top: 504px;
+  color: aliceblue;
+  border: none;
+  background: #0086b0;
+  border-radius: 8px;
+}
+
+a {
+  color: #0086b0;
+}
+
+.boxa {
+  background-image: url("./Images/BackgroungImg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.form4 {
+  margin-top: 100px;
+}
+
+.form3 {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 300px;
+}
+
+.opp {
   text-align: center;
+  width: 150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav2 {
+  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.25);
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Story1 {
+  width: 1100px;
+  height: 35px;
+}
+
+.Story {
+  height: 300px;
+  width: 1100px;
+  left: 100px;
+  border-radius: 5px solid transparent;
+}
+
+.publishbtn {
+  color: #fffbfb;
+  background-color: #0086b0;
+  border: none;
+  width: 200px;
+  height: 35px;
+  margin-left: 400px;
+}
+
+
+.gridcontainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.storeD {
+  width: 200px;
+  border: #292929;
+  border-radius: 2px solid black;
+}
+
+.Navlocker {
+  background-color: rgb(23, 23, 23);
+}
+
+@media screen and (max-width: 760px) {
+  .homepage {
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    align-self: start;
+    padding-left: 0%;
+    padding-top: 60px;
+    width: 100px;
+  }
+
+  .Stay {
+    height: 200px;
+    width: 300px;
+    align-self: start;
+    margin: auto;
+  }
+  .secbox {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: left;
+    padding: 0%;
+  }
+
+  .footer2 {
+    align-self: start;
+  }
+
+  .login {
+    width: 350px;
+  }
+  .dash {
+    flex-direction: column;
+  }
+
+  .dash .img {
+    display: none;
+  }
+
+  .allSt {
+    flex-direction: column;
+  }
+
+  .allSt .img {
+    display: none;
+  }
+  .Story1 {
+    width: 370px;
+    height: 35px;
+  }
+  .Story {
+    width: 370px;
+  }
+  .publishbtn {
+    margin-left: 100px;
+  }
+
+  .btn00 {
+    flex-direction: column;
+  }
+  .what {
+    align-self: start;
+  }
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto !important;
+    align-items: center;
+    padding-left: 30px;
+  }
+
+  .storeD {
+    width: 150px;
+  }
+  .nav2 {
+    padding: 0.5rem;
+    align-items: center;
+  }
+
+  .navh {
+    gap: 20px;
+    align-self: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width:760px) and (max-width: 1000px) {
+  .allSt img{
+    width: 400px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Story1 {
+    width: 700px;
+    height: 35px;
+  }
+  .Story {
+    width: 700px;
+  }
+  .publishbtn {
+    margin-left: 250px;
   }
 }
