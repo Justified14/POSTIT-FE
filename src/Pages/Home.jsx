@@ -32,7 +32,7 @@ export default function Home() {
       </div>
       <div className='d-flex justify-align-content-between align-self-center gap-2 m-4 p-3 secbox'>
             <div className='d-flex gap-3 '>
-            <img src={rectangle} />
+            <img src={rectangle} alt=""/>
               <div className='d-flex flex-column gap-2 mt-2'>
                 <button className='life'>Lifestyle</button>
                 <h6>The 20 biggest fashion company in Nigeria</h6>
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
 
             <div className='d-flex gap-3 '>
-            <img src={rectangle2} />
+            <img src={rectangle2} alt=""/>
               <div className='d-flex flex-column gap-2 mt-2'>
                 <button className='life2'>Nature</button>
                 <h6 >The 20 biggest Agro company in Nigeria</h6>
@@ -48,7 +48,7 @@ export default function Home() {
             </div>
 
             <div className='d-flex gap-3 '>
-            <img src={rectangle3} />
+            <img src={rectangle3} alt=""/>
               <div className='d-flex flex-column gap-2 mt-2'>
                 <button className='life3'>Technology</button>
                 <h6>The 20 biggest Tech company in Nigeria</h6>

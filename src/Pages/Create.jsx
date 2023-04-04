@@ -30,7 +30,7 @@ export default function Create() {
             'authorization': `Bearer ${token}`
           }
         });
-        const data = await res.json();
+           await res.json();
         setMsg('Story Published');
         redirect("/Stories");
         

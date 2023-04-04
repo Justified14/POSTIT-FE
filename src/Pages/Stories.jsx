@@ -26,7 +26,7 @@ export default function Stories() {
   };
   useEffect(()=>{
       fetchData();
-  }, []);
+  });
 
   
   const handleDelete = async (id) => {
@@ -37,7 +37,7 @@ export default function Stories() {
         authorization: `Bearer ${token}`,
       },
     });
-    const data = await res.json();
+        await res.json();
     // console.log(data);
     window.location.reload(false);
   }

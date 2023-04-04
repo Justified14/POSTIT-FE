@@ -23,7 +23,7 @@ export default function Dashboard() {
   }
   useEffect(()=>{
     fetchUser()
-  }, [])
+  })
   return (
     <>
     <Navhead2/>

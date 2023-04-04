@@ -27,7 +27,7 @@ export default function Allstories() {
   };
   useEffect(()=>{
       fetchData();
-  }, [])
+  })
 
   return (
     <>
@@ -46,7 +46,7 @@ export default function Allstories() {
     {loading && <Spinner />}
       <div className="gridcontainer gap-1">
     {stories.map((story) => {
-        const {_id, tag,title,paragraph, image} = story;
+        const {_id,title,paragraph, image} = story;
         return (
           <div key={_id} className='storeD'>
             <img src={image} alt="" className='img-fluid' style={{width:'200px'}}/>

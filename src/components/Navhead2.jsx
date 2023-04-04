@@ -14,7 +14,7 @@ export default function Navhead() {
       <div className='d-flex justify-content-between align-item-center nav2'>
         <div className='navImg'>
         <NavLink to="/Dashboard">
-            <img src= {Logo} />
+            <img src= {Logo} alt=""/>
         </NavLink>
         </div>
         <div className='d-flex navh'>

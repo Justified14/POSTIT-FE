@@ -23,7 +23,7 @@ export default function Story() {
   }
   useEffect(()=>{
     fetchData();
-}, [])
+})
   return (
     <>
     <Navhead/>

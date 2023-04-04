@@ -8,7 +8,6 @@ export default function Edit() {
   const [tag, setTag] = useState('');
   const [title,setTitle] = useState('');
   const [paragraph, setParagraph] = useState('');
-  const [image, setImage] = useState(null);
   const [load, setload] = useState(false);
 
   const {id} = useParams();
@@ -25,9 +24,8 @@ export default function Edit() {
       setTag(story.tag);
       setTitle(story.title);
       setParagraph(story.paragraph);
-      setImage(story.image);
   }
-    useEffect(() => {fetchStory()}, [])
+    useEffect(() => {fetchStory()})
 
   const redirect = useNavigate();
 
@@ -42,7 +40,7 @@ export default function Edit() {
         },
         body: JSON.stringify({title, paragraph ,tag, })         
     });
-    const data = await res.json();
+       await res.json();
     redirect('/Stories')
 }
 

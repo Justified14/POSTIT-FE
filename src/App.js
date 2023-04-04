@@ -11,7 +11,6 @@ import Signup from './Pages/Signup';
 import Stories from './Pages/Stories';
 import Story from './Pages/Story.jsx';
 import Useauth from './Authen/Useauth.jsx';
-import Footer from './components/Footer';
 
 
 function App() {
