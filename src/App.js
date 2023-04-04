@@ -11,6 +11,7 @@ import Signup from './Pages/Signup';
 import Stories from './Pages/Stories';
 import Story from './Pages/Story.jsx';
 import Useauth from './Authen/Useauth.jsx';
+import Errorpage from './utils/Errorpage';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Route path="/Allstories" element={<Allstories/>} />
       <Route path="/Story/:id" element={<Story/>} />
       </Route>
+      <Route path="*" element={<Errorpage/>} />
       </Routes>
     </div>
   );
