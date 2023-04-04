@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Container} from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Signup() {
   const [firstName, setfirstName] = useState('');
@@ -58,7 +58,7 @@ const redirect = useNavigate();
         <input type="password" required id='password' name='password' value={password} onChange={(e)=> setPassword(e.target.value)} className='form3' /><br />
         <button type='submit'className='btn2 mt-4'> Continue</button>
         </form>
-        <h6>Already have an account? <a href="/Login">Login</a></h6>
+        <h6>Already have an account? <Link to="/Login">Login</Link></h6>
 
         </div>
     </Container>

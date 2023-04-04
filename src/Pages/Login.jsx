@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -41,7 +41,7 @@ export default function Login() {
         <input type="password" required id='password' name='password' value={password} onChange={(e)=> setPassword(e.target.value)} className='form2' /><br />
         <button type='submit' className='btn2 mt-5'> Continue</button>
         </form>
-        <h6>No account? <a href="/Signup">SignUp</a></h6>
+        <h6>No account? <Link to="/Signup">SignUp</Link></h6>
 
         </div>
     </Container>
