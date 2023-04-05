@@ -43,9 +43,8 @@ export default function Dashboard() {
               </Link>
             </div>
         </div>
-        <div className='img'>
-            <img src={DashboardImg} alt="" />
-        </div>
+        
+            <img src={DashboardImg} alt="" className='img' />
     </Container>
     <Footer/>
     </>

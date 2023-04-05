@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom';
+import Logo from '../Images/Logo.svg'
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -31,8 +32,12 @@ export default function Login() {
     <>
     <div className='boxa'>
     <Container className='text-center login'>
+      <Link to="/">
+      <img src={Logo} alt="" className='mt-5'/>
+      </Link>
+       
         <div className='form1'>
-        <h4>Welcome Back</h4>
+        <h2>Welcome Back</h2>
         <form onSubmit={login} className='mb-3'>
         <label htmlFor="email" className='mt-5'> Your Email Address</label><br />
         <input type="text" required id='email' name='email' value={email} onChange={(e)=> setEmail(e.target.value)} className='form2' /><br />

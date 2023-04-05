@@ -49,7 +49,7 @@ export default function Allstories() {
         const {_id,title,paragraph, image} = story;
         return (
           <div key={_id} className='storeD'>
-            <img src={image} alt="" className='img-fluid' style={{width:'200px'}}/>
+            <img src={image} alt="" className='imgSize'/>
             {/* <h3>{tag}</h3> */}
             <h4>{title}</h4>
             <p>{paragraph.slice(0,100)}</p>
