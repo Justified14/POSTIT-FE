@@ -10,12 +10,14 @@ export default function Create() {
   const [paragraph, setparagraph] = useState('');
   const [image, setImage] = useState(null);
   const [msg, setMsg] = useState('');
+  const [load, setLoad] = useState('');
   const url = 'https://postitapi.onrender.com/api/v1/story'
   const token = JSON.parse(localStorage.getItem('token'));
 
   const redirect = useNavigate();
 
   const submit = async (e) => {
+    setLoad(true);
       e.preventDefault();
       const formData = new  FormData();
       formData.append('tag',tag);
@@ -54,7 +56,7 @@ export default function Create() {
                 <textarea type="text" name='paragraph' id='paragraph' value={paragraph} onChange={(e) => setparagraph(e.target.value)} placeholder='Write a story.....' className='Story'/><br />
                 <label htmlFor="image">Images</label><br />
                 <input type="File"  accept="image/*" name="image" id="image" onChange={(e) => setImage(e.target.files[0])}/><br />
-                <button type='submit' className='mt-3 publishbtn'>Publish Story</button>
+                <button type='submit' className='mt-3 publishbtn'>{load ? 'Publishing story': 'Publish Story'}</button>
             </form>
 
             </Container>

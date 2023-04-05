@@ -10,12 +10,14 @@ export default function Signup() {
   const [gender, setGender] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [load, setLoad]=useState('');
   const [error, setError] = useState('');
   const url = 'https://postitapi.onrender.com/signup';
 
 
 const redirect = useNavigate();
   const signup = async(e) =>{
+    setLoad(true);
     e.preventDefault();
     const res = await fetch (url, {
       method: 'POST',
@@ -60,7 +62,7 @@ const redirect = useNavigate();
         <p style={{color: 'red',}}>{error}</p>
         <label htmlFor="password" className='mt-3'>Password</label><br />
         <input type="password" required id='password' name='password' value={password} onChange={(e)=> setPassword(e.target.value)} className='form3' /><br />
-        <button type='submit'className='btn2 mt-4'> Continue</button>
+        <button type='submit'className='btn2 mt-4'>{load ? 'Signing Up......': 'Continue'}</button>
         </form>
         <h6>Already have an account? <Link to="/Login">Login</Link></h6>
 
